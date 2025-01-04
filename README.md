@@ -1,81 +1,64 @@
-# folder-flattener.py
+# Folder Flattener
 
-## Introduction
-**folder-flattener.py** is a user-friendly desktop application designed to help you efficiently copy and organize files from one folder to another. The program preserves only the file types you choose, eliminating clutter and ensuring you only keep what matters. With a sleek, easy-to-use interface, this tool is perfect for anyone looking to streamline their file management.
+A user-friendly desktop application that helps organize and consolidate files from complex folder structures into a single, organized directory.
 
-Whether you want to back up documents, sort media files, or extract specific file types from a complex folder structure, **folder-flattener.py** makes it simple and hassle-free.
+## What Does It Do?
 
----
-
-## Features
-- Select specific file types to preserve (e.g., documents, media, images, etc.).
-- Organize files from a source folder into a target folder without duplicating unnecessary content.
-- Handle duplicate filenames intelligently.
-- Intuitive progress display and cancel option for large copy operations.
-
----
+Folder Flattener simplifies file management by:
+- Scanning through nested folders to find specific types of files
+- Copying these files into a single destination folder
+- Automatically handling duplicate filenames
+- Preserving original files while creating an organized copy
 
 ## Getting Started
 
-### Downloading and Setting Up
-1. Navigate to the repository page and locate the **Code** button.
-2. Select **Download ZIP** and save the ZIP file to your computer.
-3. Extract the contents of the ZIP file to a folder of your choice.
+### Download and Setup
 
-### Running the Program
-1. Open the extracted folder.
-2. Locate the file named **folder-flattener.py**.
-3. Double-click the file to launch the program.
+1. Download the program by clicking the green "Code" button at the top of this page and selecting "Download ZIP"
+2. Extract the ZIP file to your preferred location
+3. Make sure Python is installed on your computer (Python 3.6 or newer)
+4. Double-click `folder-flattener.py` to run the program
 
-> Note: Ensure that Python 3.x is installed on your computer. If Python is not installed, you can download it from [python.org](https://www.python.org/).
+### Using the Program
 
----
+1. Click "Browse" next to "Source Folder" to select the folder containing your files
+2. Click "Browse" next to "Target Folder" to choose where you want the organized files
+3. Select which file types you want to copy (PDF, DOCX, images, etc.)
+4. Click "Copy Files" to begin the process
+5. Monitor progress through the status bar
 
-## How to Use
+## Use Cases
 
-### Step 1: Select Source and Target Folders
-- Use the **Browse** button next to "Source Folder" to choose the folder containing the files you want to copy.
-- Use the **Browse** button next to "Target Folder" to specify the destination folder.
+### Academic Research Organization
+Perfect for consolidating research papers and documents scattered across multiple folders. For example, when working with a Zotero library:
+- Source folder: Your Zotero storage folder with its complex structure
+- Target folder: A new folder for just the PDF files
+- Select: PDF file type
+Result: All research papers in one clean folder, regardless of their original location
 
-### Step 2: Choose File Types to Preserve
-- Scroll through the list of file types and check the boxes next to the file extensions you want to keep.
+### Photo Collection
+Organize photos spread across various event folders:
+- Source folder: Your main pictures directory
+- Target folder: A new consolidated photo album
+- Select: Image file types (.jpg, .png, etc.)
+Result: All photos in one location for easy browsing
 
-### Step 3: Start the Copy Process
-- Click the **Copy Files** button to begin copying files from the source folder to the target folder.
-- Monitor progress via the progress bar and percentage display.
+### Document Backup
+Create a focused backup of important documents:
+- Source folder: Your work directory with multiple project folders
+- Target folder: A backup folder
+- Select: Document types (.pdf, .docx, etc.)
+Result: All important documents backed up in one place
 
-### Step 4: Cancel (if needed)
-- Click the **Cancel** button during the copying process to halt the operation.
+## Features
 
----
+- Modern, intuitive interface
+- Real-time progress tracking
+- Duplicate filename handling
+- Cancellable operations
+- File type filtering
+- Original files remain untouched
 
-## Use Cases and Examples
+## Repository Updates Notice
 
-### 1. **Backup Important Files**
-Scenario: You need to back up only documents (e.g., PDFs, Word files) from a folder containing various file types.
-- Select the source folder.
-- Choose a target folder for the backup.
-- Check only the boxes for ".pdf" and ".docx."
-- Click **Copy Files**.
-
-### 2. **Organize Media Files**
-Scenario: Extract all your media files (e.g., videos and music) from a folder with mixed content.
-- Choose the source folder with mixed files.
-- Specify a new folder for organized media.
-- Select media file types like ".mp3" and ".mp4."
-- Start the copy process.
-
-### 3. **Clean Up Duplicate Names**
-Scenario: Avoid overwriting files with the same name in the target folder.
-- The program automatically handles duplicate filenames by appending numbers (e.g., "file_1.jpg").
-
----
-
-## Disclaimers and Updates
-- The repository may be updated at any time, potentially making this README file outdated.
-- While efforts are made to ensure the README reflects the latest functionality, updates to the program may not be immediately documented here.
-
----
-
-Enjoy the simplicity and efficiency of **folder-flattener.py**!
-
+This repository may be updated at any time. While efforts are made to keep documentation current, the README might not always reflect the latest changes. Users should refer to the program interface for the most up-to-date functionality.
