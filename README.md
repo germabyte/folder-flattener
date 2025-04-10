@@ -1,64 +1,125 @@
-# Folder Flattener
+# 📁 Folder Flattener
 
-A user-friendly desktop application that helps organize and consolidate files from complex folder structures into a single, organized directory.
+## 1. Introduction and Purpose
 
-## What Does It Do?
+### Introduction  
+**Folder Flattener** is a desktop application that helps users collect and copy files of specific types from any folder (including subfolders) into a single destination folder. It includes a graphical user interface (GUI) to easily select source and target folders, choose file types, and track progress—all without writing a single line of code.
 
-Folder Flattener simplifies file management by:
-- Scanning through nested folders to find specific types of files
-- Copying these files into a single destination folder
-- Automatically handling duplicate filenames
-- Preserving original files while creating an organized copy
+### Purpose & Problem Statement  
+When working with deeply nested directories (e.g., downloads, media libraries, document archives), it’s often time-consuming to manually locate and extract files of certain formats. This program solves that by recursively scanning a folder structure and copying selected file types into one flat, organized destination.
 
-## Getting Started
+### Value Proposition  
+- Saves time by automating the collection of desired files.
+- Ensures easy access to all files of interest in one place.
+- Provides a clean, simple, and intuitive interface for users of all technical skill levels.
 
-### Download and Setup
+---
 
-1. Download the program by clicking the green "Code" button at the top of this page and selecting "Download ZIP"
-2. Extract the ZIP file to your preferred location
-3. Make sure Python is installed on your computer (Python 3.6 or newer)
-4. Double-click `folder-flattener.py` to run the program
+## 2. Dependencies (Required Software/Libraries)
 
-### Using the Program
+The script is built using **Python's standard library only** and requires no third-party packages.
 
-1. Click "Browse" next to "Source Folder" to select the folder containing your files
-2. Click "Browse" next to "Target Folder" to choose where you want the organized files
-3. Select which file types you want to copy (PDF, DOCX, images, etc.)
-4. Click "Copy Files" to begin the process
-5. Monitor progress through the status bar
+### Requirements:
+- **Python 3.x**  
+  Used to run the program and power the GUI with built-in `tkinter`.
 
-## Use Cases
+> **Installation Instructions:**  
+1. Download and install Python from the official website:  
+   👉 [https://www.python.org/downloads](https://www.python.org/downloads)  
+2. During installation, ensure the box labeled **"Add Python to PATH"** is checked.
 
-### Academic Research Organization
-Perfect for consolidating research papers and documents scattered across multiple folders. For example, when working with a Zotero library:
-- Source folder: Your Zotero storage folder with its complex structure
-- Target folder: A new folder for just the PDF files
-- Select: PDF file type
-Result: All research papers in one clean folder, regardless of their original location
+---
 
-### Photo Collection
-Organize photos spread across various event folders:
-- Source folder: Your main pictures directory
-- Target folder: A new consolidated photo album
-- Select: Image file types (.jpg, .png, etc.)
-Result: All photos in one location for easy browsing
+## 3. Getting Started (Installation & Execution)
 
-### Document Backup
-Create a focused backup of important documents:
-- Source folder: Your work directory with multiple project folders
-- Target folder: A backup folder
-- Select: Document types (.pdf, .docx, etc.)
-Result: All important documents backed up in one place
+### Step-by-Step Guide
 
-## Features
+#### 1. **Download the Repository**
+- Click the green `<> Code` button on the GitHub page.
+- Choose `Download ZIP`.
+- Extract the ZIP file to any folder of your choice.
 
-- Modern, intuitive interface
-- Real-time progress tracking
-- Duplicate filename handling
-- Cancellable operations
-- File type filtering
-- Original files remain untouched
+#### 2. **Run the Program**
+- Open the **Command Prompt (Windows)** or **Terminal (macOS/Linux)**:
+  - Windows: Press `Win + R`, type `cmd`, press Enter.
+  - macOS: Open Spotlight (`Cmd + Space`), type `Terminal`, press Enter.
+- Navigate to the folder containing the script:
+  ```bash
+  cd path_to_extracted_folder
+  ```
+  Replace `path_to_extracted_folder` with the actual path (e.g., `Downloads/folder-flattener-main`).
 
-## Repository Updates Notice
+- Run the program using:
+  ```bash
+  python folder-flattener.py
+  ```
 
-This repository may be updated at any time. While efforts are made to keep documentation current, the README might not always reflect the latest changes. Users should refer to the program interface for the most up-to-date functionality.
+✅ The graphical interface will launch automatically.
+
+---
+
+## 4. User Guide (How to Effectively Use the Program)
+
+### 📂 Step-by-Step Usage
+
+1. **Select Source Folder**  
+   Click the **"Browse"** button next to **Source Folder**, then choose the folder where your files are located.
+
+2. **Select Target Folder**  
+   Click the **"Browse"** button next to **Target Folder**, then choose where you want the collected files to be copied.
+
+3. **Choose File Types**  
+   - Check or uncheck specific file extensions by category (e.g., `.mp4`, `.pdf`, `.jpg`).
+   - All types are selected by default for convenience.
+
+4. **Start Copying**  
+   Click **"Copy Files"** to begin. A progress bar and status message will keep you informed.
+
+5. **Cancel Operation** *(Optional)*  
+   You can cancel at any point by clicking **"Cancel"**.
+
+### 🧾 Output Behavior
+- The program **copies (not moves)** matching files into the selected target folder.
+- All files are **flattened** into one directory (no subfolder structure).
+- If files with the same name already exist, the program will automatically rename the new ones (e.g., `file_1.pdf`).
+
+---
+
+## 5. Use Cases and Real-World Examples
+
+### ✅ Use Case 1: Collecting All PDFs from a Research Folder  
+**Problem:** A student has hundreds of academic PDFs scattered across multiple subfolders.  
+**Action:**  
+- Set the main folder as source.  
+- Select `.pdf` under "Documents".  
+- Set Desktop as target folder.  
+**Result:** All PDFs copied to one easy-access location.
+
+---
+
+### ✅ Use Case 2: Extracting Media from Downloads  
+**Problem:** A user wants to gather all music and video files from their messy Downloads folder.  
+**Action:**  
+- Select "Downloads" as source.  
+- Select `.mp3`, `.mp4`, `.mkv`, `.avi` under "Media".  
+- Choose "Music and Videos" folder as target.  
+**Result:** Only selected media files are copied, no clutter.
+
+---
+
+### ✅ Use Case 3: Backing Up Scripts  
+**Problem:** A developer wants to back up all script files across projects.  
+**Action:**  
+- Set "Projects" as source.  
+- Select `.py`, `.js`, `.html`, `.css`, `.sh` under "Scripts".  
+- Set an external drive folder as the target.  
+**Result:** All scripts from various folders are now backed up in one place.
+
+---
+
+## 6. Disclaimer & Important Notices
+
+- This repository and its contents may be updated at any time without notice.  
+- Such updates may render parts of this README file obsolete.  
+- No commitment is made to maintain or update the README to reflect future changes.  
+- The provided code is delivered **"as-is"**, and no guarantees—explicit or implied—are made regarding functionality, reliability, compatibility, or correctness.
